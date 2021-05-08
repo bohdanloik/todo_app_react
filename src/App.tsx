@@ -7,13 +7,19 @@ import './App.css';
 function App() {
   return (
       <div className="App">
-        <div className="todoList">
-          <Header />
-          <List />
-          <Footer />
-        </div>
+        <Todolist />
+        <Todolist />
       </div>
   );
+}
+function Todolist() {
+  return(
+    <div className="todoList">
+      <Header />
+      <List />
+      <Footer />
+  </div>
+  )
 }
 
 export default App;
