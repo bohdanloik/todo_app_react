@@ -1,7 +1,7 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from './Header';
 import List from './List';
-import Footer from './Footer';
 function Todolist() {
     return(
       <div className="todoList">
