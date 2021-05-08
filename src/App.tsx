@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from './Header';
-import List from './List';
-import Footer from './Footer';
+import Todolist from './Todolist'
 import './App.css';
 
 function App() {
@@ -12,14 +10,6 @@ function App() {
       </div>
   );
 }
-function Todolist() {
-  return(
-    <div className="todoList">
-      <Header />
-      <List />
-      <Footer />
-  </div>
-  )
-}
+
 
 export default App;
