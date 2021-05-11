@@ -1,4 +1,5 @@
 import React from 'react';
+import { Task } from './Task/Task';
 import styles from './style.module.css'
 function List() {
     return (
@@ -8,17 +9,5 @@ function List() {
         <Task isDone={true}  title ='Js'/>
     </div>
     );
-}
-type PropsType = {
-  isDone: boolean;
-  title: string;
-}
-const Task = (props: PropsType) => {
-  return (
-    <div className={styles.task}>
-      <input type="checkbox" checked={props.isDone}/>
-      <span>{props.title}</span>
-    </div>
-  )
 }
 export default List;
