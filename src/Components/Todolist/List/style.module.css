@@ -4,3 +4,6 @@
 .list {
     
 }
+.done {
+    opacity: 0.4;
+}
