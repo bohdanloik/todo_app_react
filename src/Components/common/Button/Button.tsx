@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Button = () => {
-    return <input type="button" value='XXX'/>
+type PropsType = {
+    text : string;
+}
+const Button = (props:PropsType) => {
+    return <input type="button" value={props.text}/>
 }
 
 export default Button;

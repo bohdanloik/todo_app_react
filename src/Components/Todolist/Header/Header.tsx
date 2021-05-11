@@ -8,7 +8,7 @@ function Header() {
         <div className="todoList-newTaskForm">
           {/* <input type="text" placeholder="title"/> */}
           <Input />
-          <Button />
+          <Button text='Add'/>
         </div>
       </div>
     );
