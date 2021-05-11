@@ -9,7 +9,6 @@ function Header(props: PropsType) {
       <div className="todoList-header">
         <h3 className="todoList-header__title">{props.title}</h3>
         <div className="todoList-newTaskForm">
-          {/* <input type="text" placeholder="title"/> */}
           <Input placeholder='Name'/>
           <Button text='Add'/>
         </div>

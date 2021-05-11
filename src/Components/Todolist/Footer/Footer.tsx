@@ -4,9 +4,9 @@ import Button from '../../common/Button/Button';
 function Footer() {
     return (
     <div className="todoList-footer">
-      <Button text='Add'/>
-      <Button text='Active'/>
-      <Button text='Reset'/>
+      <Button text='Add' type='info' />
+      <Button text='Active' type='danger'/>
+      <Button text='Reset' type='success'/>
     </div>
     );
   }

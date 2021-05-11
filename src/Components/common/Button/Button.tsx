@@ -3,9 +3,23 @@ import styles from './style.module.css';
 
 type PropsType = {
     text : string;
+    type ?: "default" | "danger" | "success" | "info";
 }
 const Button = (props:PropsType) => {
-    return <input type="button" className={styles.button} value={props.text}/>
+    let css = styles.button;
+    if(!props.type || props.type === "default") {
+        css = '';
+    }
+    if(props.type === "danger") {
+        css = styles.danger;
+    }
+    if(props.type === "success") {
+        css = styles.success;
+    }
+    if(props.type === "info") {
+        css = styles.info;
+    }
+    return <input type="button" className={styles.button + ' ' + css} value={props.text}/>
 }
 
 export default Button;
