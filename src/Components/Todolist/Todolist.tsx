@@ -7,12 +7,13 @@ import style from './style.module.css'
 
 type PropsType = {
   tasks: Array<TasksType>
+  title: string
 }
 
 export const Todolist = (props: PropsType) => {
     return(
       <div className={style.todoList}>
-        <Header />
+        <Header title={props.title}/>
         <List tasks={props.tasks}/>
         <Footer />
     </div>

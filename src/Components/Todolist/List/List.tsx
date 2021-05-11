@@ -5,14 +5,15 @@ import { TasksType } from '../../../App';
 type PropsType = {
   tasks: Array<TasksType>
 }
-export const List=(props: PropsType) =>{
-    return (
-      <div className={styles.list}>
-        <Task isDone={props.tasks[0].isDone}  title ={props.tasks[0].title}/>
-        <Task isDone={props.tasks[1].isDone}  title ={props.tasks[1].title}/>
-        <Task isDone={props.tasks[2].isDone}  title ={props.tasks[2].title}/>
+function List(props: PropsType) {
 
+  let jsxElement = props.tasks.map((t)=> {
+    return <Task isDone={t.isDone}  title ={t.title} />;
+  });
+    return ( <div className={styles.list}>
+      {jsxElement}
+    
     </div>
-    );
+    )
 }
 export default List;
