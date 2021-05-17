@@ -7,9 +7,6 @@ type PropsType = {
 }
 const Button = (props:PropsType) => {
     let css = styles.button;
-    if(!props.type || props.type === "default") {
-        css = '';
-    }
     if(props.type === "danger") {
         css = styles.danger;
     }
