@@ -3,7 +3,7 @@ import { TasksType } from '../../App';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import List from './List/List';
-import style from './style.module.css'
+import style from './Todolist.module.css'
 
 type PropsType = {
   tasks: Array<TasksType>
