@@ -7,15 +7,14 @@ type PropsType = {
     type ?: "default" | "danger" | "success" | "info";
 }
 const Button = (props:PropsType) => {
-    let css = styles.button;
 
-    let resultCSS = cn({
+    let css = cn({
         [styles.button] : true,
         [styles.danger] : props.type === 'danger',
         [styles.success] : props.type === 'success',
         [styles.info] : props.type === 'info'
     })
-    return <input type="button" className={resultCSS} value={props.text}/>
+    return <input type="button" className={css} value={props.text}/>
 }
 
 export default Button;
